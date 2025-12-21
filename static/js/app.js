@@ -16,6 +16,30 @@ function showError(message) {
     setTimeout(() => errorDiv.classList.remove('active'), 5000);
 }
 
+// Clean repetitive text
+function cleanRepetitiveText(text) {
+    // Remove excessive repetition (more than 3 same words in a row)
+    const words = text.split(' ');
+    const cleaned = [];
+    let repeatCount = 1;
+    let lastWord = '';
+    
+    for (let word of words) {
+        if (word.toLowerCase() === lastWord.toLowerCase()) {
+            repeatCount++;
+            if (repeatCount <= 2) {
+                cleaned.push(word);
+            }
+        } else {
+            repeatCount = 1;
+            cleaned.push(word);
+        }
+        lastWord = word;
+    }
+    
+    return cleaned.join(' ').substring(0, 500); // Max 500 chars
+}
+
 // Show loading
 function showLoading() {
     document.getElementById('loading').classList.add('active');
@@ -45,10 +69,17 @@ function displayProducts(results) {
             : (product.description ? product.description.substring(0, 100) + '...' : 'No description');
         
         const svgPlaceholder = `data:image/svg+xml,${encodeURIComponent(`
-            <svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
-                <rect width="250" height="250" fill="#667eea"/>
+            <svg width="280" height="280" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="280" height="280" fill="url(#grad)"/>
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
-                      font-family="Arial, sans-serif" font-size="16" fill="white">
+                      font-family="Futura, Arial, sans-serif" font-size="14" fill="white" 
+                      letter-spacing="2" style="text-transform:uppercase">
                     ${product.category}
                 </text>
             </svg>
@@ -132,7 +163,8 @@ async function searchWithRAG() {
         const data = await response.json();
 
         if (response.ok) {
-            document.getElementById('description').textContent = data.description;
+            const cleanedDescription = cleanRepetitiveText(data.description);
+            document.getElementById('description').textContent = cleanedDescription;
             document.getElementById('descriptionBox').style.display = 'block';
             document.getElementById('generatedImage').style.display = 'none';
             displayProducts(data.results);
@@ -176,14 +208,15 @@ async function fullPipeline() {
         const data = await response.json();
 
         if (response.ok) {
-            document.getElementById('description').textContent = data.description;
+            const cleanedDescription = cleanRepetitiveText(data.description);
+            document.getElementById('description').textContent = cleanedDescription;
             document.getElementById('descriptionBox').style.display = 'block';
             loadStats();
             
             if (data.retrieval_results) {
                 displayProducts(data.retrieval_results);
             } else {
-                document.getElementById('productsGrid').innerHTML = '<p style="text-align:center;color:#666;">Pipeline completed successfully!</p>';
+                document.getElementById('productsGrid').innerHTML = '<p style="text-align:center;color:#666;font-family:Futura,sans-serif;letter-spacing:1px;">Pipeline completed successfully!</p>';
             }
             
             if (data.generated_image) {
@@ -213,7 +246,7 @@ async function loadStats() {
         const healthData = await healthRes.json();
 
         if (healthRes.ok && healthData.status === "healthy") {
-            document.getElementById("apiStatus").textContent = "Online";
+            document.getElementById("apiStatus").innerHTML = '<i class="fas fa-check-circle"></i> Online';
             
             try {
                 const statsRes = await fetch(`${apiUrl}/stats`, {
@@ -229,15 +262,19 @@ async function loadStats() {
                 console.error('Stats error:', e);
             }
         } else {
-            document.getElementById("apiStatus").textContent = "Offline";
+            document.getElementById("apiStatus").innerHTML = '<i class="fas fa-times-circle"></i> Offline';
         }
     } catch (e) {
         console.error('Health check error:', e);
-        document.getElementById("apiStatus").textContent = "Offline";
+        document.getElementById("apiStatus").innerHTML = '<i class="fas fa-times-circle"></i> Offline';
     }
 }
 
 // Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    loadStats();
+});
+
 document.getElementById('apiUrl').addEventListener('blur', loadStats);
 
 document.getElementById('searchInput').addEventListener('keypress', (e) => {
