@@ -21,6 +21,8 @@ backend/data/*.bin
 backend/data/*.db
 backend/data/*.npz
 
+# Git LFS attributes will be stored in .gitattributes
+
 # Logs
 *.log
 
