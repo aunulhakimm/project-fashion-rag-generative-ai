@@ -1,6 +1,6 @@
 
 
-# 👗 Fashion RAG — Multimodal Retrieval-Augmented Generation for Fashion Recommendation
+# 👗 Design and Construction of a Multimodal Fashion-RAG System for Intelligent Clothing Recommendation Based on Fashion Product Images and Text Dataset
 
 Sistem rekomendasi fashion cerdas yang menggabungkan pencarian multimodal (teks + gambar), AI text generation, dan pembuatan gambar fashion baru secara otomatis. Dibangun dengan teknologi modern dan model AI state-of-the-art untuk memberikan pengalaman pencarian fashion yang intuitif dan powerful.
 
@@ -37,7 +37,7 @@ Proyek ini dikembangkan oleh:
 
 ## 🏗️ Arsitektur Sistem
 
-![Arsitektur Sistem](assets/arsitektur-sistem.png)
+![Academic Poster](assets/poster/poster%20Tkc.png)
 
 **Pipeline Workflow:**
 1. **Input**: User memberikan query text, upload image, atau kombinasi keduanya
