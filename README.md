@@ -142,6 +142,8 @@ python app.py
 
 ## 💻 Penggunaan
 
+> 🎥 **Video Demo**: [Lihat simulasi penggunaan sistem](https://drive.google.com/file/d/1KFNRRL0G7AktcTAV8tg7_pPmM-SPbJQi/view?usp=sharing)
+
 ### Option 1: Web UI (Recommended)
 
 1. **Buka browser** dan akses `http://localhost:8000`
@@ -536,8 +538,8 @@ docker run -p 5000:5000 fashion-rag
 
 ### AI Models
 - **CLIP ViT-B/32**: Text-image embedding model
-- **LLM (via Gradio)**: Text generation untuk rekomendasi
-- **Stable Diffusion**: AI image generation
+- **TinyLlama 1.1B Chat**: Text generation untuk rekomendasi fashion ([HuggingFace](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0))
+- **Stable Diffusion v1.5**: AI image generation untuk fashion ([HuggingFace](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5))
 
 ---
 
@@ -585,14 +587,19 @@ Untuk pertanyaan, issues, atau feedback:
 
 ## 🔗 Lampiran & Link Penting
 
+### Demo & Tutorial
+- **Video Demo Sistem**: [Simulasi Penggunaan Fashion RAG](https://drive.google.com/file/d/1KFNRRL0G7AktcTAV8tg7_pPmM-SPbJQi/view?usp=sharing)
+
 ### Dataset & Notebooks
 - **Notebook Colab** (Data preprocessing & indexing): [Google Colab Link](https://colab.research.google.com/drive/1WwMVobRyyxsA3R1EdH6C-IYwzVWeZy0t?usp=sharing)
 - **Fashion Product Dataset** (Kaggle): [Dataset Link](https://www.kaggle.com/datasets/nirmalsankalana/fashion-product-text-images-dataset)
 
 ### Model Resources
 - **CLIP Model**: [OpenAI CLIP](https://github.com/openai/CLIP)
+- **TinyLlama 1.1B Chat**: [HuggingFace Model](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- **Stable Diffusion v1.5**: [HuggingFace Model](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)
 - **FAISS Documentation**: [Facebook FAISS](https://github.com/facebookresearch/faiss)
-- **Stable Diffusion**: [Stability AI](https://github.com/Stability-AI/stablediffusion)
+- **Stable Diffusion (General)**: [Stability AI](https://github.com/Stability-AI/stablediffusion)
 
 ### Documentation
 - **API Documentation (Postman)**: [View Full API Docs](https://documenter.getpostman.com/view/51115010/2sBXVbGtM6)
