@@ -134,7 +134,7 @@ python app.py
 > 
 > [📺 Lihat video demo lengkap di Google Drive](https://drive.google.com/file/d/1KFNRRL0G7AktcTAV8tg7_pPmM-SPbJQi/view?usp=sharing)
 
-![Demo Simulasi](assets/poster/IMG_2242.GIF)
+<img src="assets/poster/IMG_2242.GIF" alt="Demo Simulasi" width="800"/>
 
 ### Option 1: Web UI (Recommended)
 
