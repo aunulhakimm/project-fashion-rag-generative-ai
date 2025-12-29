@@ -549,10 +549,10 @@ Proyek ini dikembangkan oleh:
 
 | Nama | NIM | Role |
 |------|-----|------|
-| **Muhammad Aunul Hakim** | 202210370311073 | QA & Project Lead |
-| **Rahmatun Nikmah** | 202210370311109 | Frontend / Fullstack Dev |
-| **Muhammad Zaky Darajat** | 202210370311052 | ML Engineer (Retrieval) |
-| **Dio Richard Prastiyo** | 202210370311061 | Data Engineer / Architect |
+| **[Muhammad Aunul Hakim](https://github.com/narpo0207)** | 202210370311073 | QA & Project Lead |
+| **[Rahmatun Nikmah](https://github.com/rnikmah)** | 202210370311109 | Frontend / Fullstack Dev |
+| **[Muhammad Zaky Darajat](https://github.com/zakydarajat)** | 202210370311052 | ML Engineer (Retrieval) |
+| **[Dio Richard Prastiyo](https://github.com/dioricharrd)** | 202210370311061 | Data Engineer / Architect |
 | **Nadhira Ulya Nisa** | 202210370311079 | AI Engineer |
 
 ---
