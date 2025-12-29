@@ -537,13 +537,27 @@ docker run -p 5000:5000 fashion-rag
 - **ES6 Modules**: Modern JavaScript modules
 
 ### AI Models
-- **CLIP ViT-B/32**: Text-image embedding model
+- **CLIP ViT-B/32**: Text-image embedding model ([HuggingFace](https://huggingface.co/sentence-transformers/clip-ViT-B-32))
 - **TinyLlama 1.1B Chat**: Text generation untuk rekomendasi fashion ([HuggingFace](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0))
 - **Stable Diffusion v1.5**: AI image generation untuk fashion ([HuggingFace](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5))
 
 ---
 
-## 📄 Lisensi & Kredit
+## � Authors & Contributors
+
+Proyek ini dikembangkan oleh:
+
+| Nama | NIM | Role |
+|------|-----|------|
+| **Muhammad Aunul Hakim** | 202210370311073 | QA & Project Lead |
+| **Rahmatun Nikmah** | 202210370311109 | Frontend / Fullstack Dev |
+| **Muhammad Zaky Darajat** | 202210370311052 | ML Engineer (Retrieval) |
+| **Dio Richard Prastiyo** | 202210370311061 | Data Engineer / Architect |
+| **Nadhira Ulya Nisa** | 202210370311079 | AI Engineer |
+
+---
+
+## �📄 Lisensi & Kredit
 
 ### Lisensi
 Proyek ini menggunakan lisensi MIT. Silakan cek file `LICENSE` untuk detail lengkap.
@@ -595,7 +609,7 @@ Untuk pertanyaan, issues, atau feedback:
 - **Fashion Product Dataset** (Kaggle): [Dataset Link](https://www.kaggle.com/datasets/nirmalsankalana/fashion-product-text-images-dataset)
 
 ### Model Resources
-- **CLIP Model**: [OpenAI CLIP](https://github.com/openai/CLIP)
+- **CLIP ViT-B/32**: [HuggingFace Model](https://huggingface.co/sentence-transformers/clip-ViT-B-32) | [OpenAI CLIP](https://github.com/openai/CLIP)
 - **TinyLlama 1.1B Chat**: [HuggingFace Model](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 - **Stable Diffusion v1.5**: [HuggingFace Model](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)
 - **FAISS Documentation**: [Facebook FAISS](https://github.com/facebookresearch/faiss)
