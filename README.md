@@ -10,6 +10,20 @@ Sistem rekomendasi fashion cerdas yang menggabungkan pencarian multimodal (teks 
 
 ---
 
+## 👥 Authors & Contributors
+
+Proyek ini dikembangkan oleh:
+
+| Nama | NIM | Role | GitHub Account |
+|------|-----|------|----------------|
+| **Muhammad Aunul Hakim** | 202210370311073 | QA & Project Lead | [@aunulhakimm](https://github.com/aunulhakimm) |
+| **Rahmatun Nikmah** | 202210370311109 | Frontend / Fullstack Dev | [@rnikmah](https://github.com/rnikmah) |
+| **Muhammad Zaky Darajat** | 202210370311052 | ML Engineer (Retrieval) | [@zakydarajat](https://github.com/zakydarajat) |
+| **Dio Richard Prastiyo** | 202210370311061 | Data Engineer / Architect | [@dioricharrd](https://github.com/dioricharrd) |
+| **Nadhira Ulya Nisa** | 202210370311079 | AI Engineer | [@narpo0207](https://github.com/narpo0207) |
+
+---
+
 ## ✨ Fitur Utama
 
 - 🔍 **Pencarian Multimodal**: Cari produk fashion menggunakan gambar, teks, atau kombinasi keduanya
@@ -517,19 +531,6 @@ docker run -p 5000:5000 fashion-rag
 
 ---
 
-## � Authors & Contributors
-
-Proyek ini dikembangkan oleh:
-
-| Nama | NIM | Role | GitHub Account |
-|------|-----|------|----------------|
-| **Muhammad Aunul Hakim** | 202210370311073 | QA & Project Lead | [@aunulhakimm](https://github.com/aunulhakimm) |
-| **Rahmatun Nikmah** | 202210370311109 | Frontend / Fullstack Dev | [@rnikmah](https://github.com/rnikmah) |
-| **Muhammad Zaky Darajat** | 202210370311052 | ML Engineer (Retrieval) | [@zakydarajat](https://github.com/zakydarajat) |
-| **Dio Richard Prastiyo** | 202210370311061 | Data Engineer / Architect | [@dioricharrd](https://github.com/dioricharrd) |
-| **Nadhira Ulya Nisa** | 202210370311079 | AI Engineer | [@narpo0207](https://github.com/narpo0207) |
-
----
 
 ## �📄 Lisensi & Kredit
 
