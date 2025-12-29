@@ -243,6 +243,8 @@ project-fashion-rag-generative-ai/
 
 ## 📊 API Endpoints
 
+> 📖 **Dokumentasi API Lengkap**: [Postman Documentation](https://documenter.getpostman.com/view/51115010/2sBXVbGtM6)
+
 ### 1. Search by Text
 ```http
 POST /search/text
@@ -593,9 +595,10 @@ Untuk pertanyaan, issues, atau feedback:
 - **Stable Diffusion**: [Stability AI](https://github.com/Stability-AI/stablediffusion)
 
 ### Documentation
+- **API Documentation (Postman)**: [View Full API Docs](https://documenter.getpostman.com/view/51115010/2sBXVbGtM6)
 - Setup lengkap LLM (Gradio): Lihat notebook Colab
 - Generate FAISS index: Lihat folder `colab/`
-- API documentation: Lihat section "API Endpoints" di atas
+- API Endpoints Reference: Lihat section "API Endpoints" di atas
 
 ---
 
