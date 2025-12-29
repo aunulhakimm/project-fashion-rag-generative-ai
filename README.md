@@ -130,7 +130,11 @@ python app.py
 
 ## 💻 Penggunaan
 
-> 🎥 **Video Demo**: [Lihat simulasi penggunaan sistem](https://drive.google.com/file/d/1KFNRRL0G7AktcTAV8tg7_pPmM-SPbJQi/view?usp=sharing)
+> 🎥 **Demo Simulasi Penggunaan Sistem**
+> 
+> [📺 Lihat video demo lengkap di Google Drive](https://drive.google.com/file/d/1KFNRRL0G7AktcTAV8tg7_pPmM-SPbJQi/view?usp=sharing)
+
+![Demo Simulasi](assets/poster/IMG_2242.GIF)
 
 ### Option 1: Web UI (Recommended)
 
